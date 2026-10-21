@@ -102,6 +102,7 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 @media(max-width:760px){.langswitch{order:2;margin-left:auto}.navtoggle{order:3;margin-left:0}.langswitch button{padding:6px 8px}.langswitch button span{display:none}}
 
 
+.play-poster{display:block;width:100%;aspect-ratio:16/9;border:1px solid #e3e6f1;border-radius:14px;background-size:cover;background-position:center;cursor:pointer;position:relative;padding:0}.play-btn{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);background:#ffb800;color:#1a1a1a;font:900 clamp(14px,2.4vw,22px) inherit;padding:.7em 1.6em;border-radius:999px;box-shadow:0 8px 24px #0006}.play-poster:hover .play-btn{background:#ffc933}
 .play-frame{margin:0 0 22px}.play-frame iframe{width:100%;height:560px;border:1px solid #e3e6f1;border-radius:14px;background:#fff;display:block}.play-full{display:inline-block;margin-top:8px;font-weight:700;font-size:13px}@media(max-width:640px){.play-frame iframe{height:460px}}
 .article-body a.guide-item{display:block;padding:18px 20px;border:1px solid #e6e8ef;border-radius:14px;background:#fff;text-decoration:none;color:#1b2540;transition:.2s}
 .article-body a.guide-item:hover{border-color:#7666e9;box-shadow:0 8px 24px rgba(113,93,244,.12)}
@@ -174,7 +175,7 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 <p><b>Fun Ten-Finger Computer Keyboard Typing Practice</b> helps you learn to type with all ten fingers in a relaxed, easy-to-remember way. It runs right in your browser — nothing to install.</p>
 <h2>How to use</h2>
 <ol>
-  <li>Click the <b>OPEN APP</b> button in the right-hand panel. The app opens in a new tab.</li>
+  <li>Play right away in the frame above. For a bigger view, click <b>Full screen</b>.</li>
   <li>Rest both hands on the keyboard, index fingers on the two keys with small bumps (F and J).</li>
   <li>Practice a little every day. Look at the screen and avoid looking down at the keyboard.</li>
 </ol>
@@ -447,6 +448,8 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 })();
 </script>
 <script>(function(){
+  document.querySelectorAll('.app-card').forEach(function(card){var ps=card.querySelector('.post-source .anlab-app-data');var c=ps&&ps.getAttribute('data-cover');var cv=card.querySelector('.card-cover');if(c&&/^https:\/\//.test(c)&&cv){cv.style.backgroundImage="url('"+c+"'),linear-gradient(135deg,var(--app-bg,#302862),var(--app-bg2,#1b173e))";cv.style.backgroundSize='cover';cv.style.backgroundPosition='center';var ic=cv.querySelector('.card-icon');if(ic)ic.style.display='none';var sg=cv.querySelector('.cover-sign');if(sg)sg.style.display='none';}});
+  document.querySelectorAll('[data-play] .play-poster').forEach(function(b){b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='on-ly-thuyet-lai-xe.html';f.title='Ôn lý thuyết lái xe';f.setAttribute('allowfullscreen','');f.style.cssText='width:100%;height:640px;border:1px solid #e3e6f1;border-radius:14px;background:#fff;display:block';b.replaceWith(f);});});
   function actionLabel(){
     var info=document.querySelector('.article-body .anlab-app-data');var b=document.querySelector('.article-shell .dl-btn');
     if(!info||!b||!info.dataset.actionVi||b.classList.contains('disabled'))return;

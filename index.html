@@ -138,6 +138,63 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 <div class='listline'><span><i></i> KHO ỨNG DỤNG</span><span data-app-count='1'>…</span></div>
 </div></section>
 <div class='wrap' id='main-content'><div class='cards'>
+<article class='app-card' data-cat='Học tập'>
+  <a class='card-cover' href='hoc-go-10-ngon.html' title='Học gõ chữ bàn phím máy tính 10 ngón vui nhộn'><span class='card-icon'>H</span><span class='cover-sign'><span>ANLAB / RELEASE</span><b>↗</b></span></a>
+  <div class='card-content'>
+    <div class='card-tags'><span class='app-platform'>ANLAB</span><span class='dotsep'>•</span><span class='app-label'>Học tập</span></div>
+    <a class='card-title' href='hoc-go-10-ngon.html'>Học gõ chữ bàn phím máy tính 10 ngón vui nhộn</a>
+    <p class='card-description'>Luyện gõ bàn phím bằng 10 ngón tay vui nhộn, dễ nhớ. Chạy ngay trên trình duyệt, không cần cài đặt.</p>
+    <div class='card-bottom'><span class='app-version'>ANLAB STUDIO</span><a class='card-more' href='hoc-go-10-ngon.html'>Xem chi tiết ↗</a></div>
+  </div>
+  <div class='post-source'><div class="anlab-app-data"
+  data-version="Web" data-platform="Web" data-format="HTML" data-size="2.6 MB" data-license="Miễn phí"
+  data-download="https://vanantrinh-142857.github.io/G-10-ng-n/" data-action-vi="▶  MỞ ỨNG DỤNG" data-action-en="▶  OPEN APP"
+  data-icon="" data-sha256="" data-accent="#0F9D77" data-accent2="#064E3B"></div>
+
+<div class="lang-block" data-lang="vi">
+<p><b>Học gõ chữ bàn phím máy tính 10 ngón vui nhộn</b> giúp bạn luyện gõ bàn phím bằng 10 ngón tay theo cách thoải mái, dễ nhớ. Ứng dụng chạy ngay trên trình duyệt, không cần cài đặt.</p>
+<h2>Cách dùng</h2>
+<ol>
+  <li>Bấm nút <b>MỞ ỨNG DỤNG</b> ở khung bên phải. Ứng dụng mở trong thẻ mới.</li>
+  <li>Đặt hai tay lên bàn phím, ngón trỏ ở hai phím có gờ nhỏ (F và J).</li>
+  <li>Luyện mỗi ngày một lúc ngắn. Nhìn màn hình, hạn chế nhìn xuống bàn phím.</li>
+</ol>
+<h2>Gợi ý để gõ nhanh hơn</h2>
+<ul>
+  <li>Ngồi thẳng lưng, cổ tay thả lỏng, không gồng ngón.</li>
+  <li>Ưu tiên gõ đúng trước, tốc độ sẽ tăng dần theo thời gian.</li>
+  <li>Luyện đều đặn mỗi ngày hiệu quả hơn luyện dồn một lần.</li>
+</ul>
+<h2>Yêu cầu</h2>
+<table>
+  <tr><th>Thiết bị</th><td>Máy tính có bàn phím (Windows, macOS, Linux)</td></tr>
+  <tr><th>Trình duyệt</th><td>Chrome, Edge, Firefox, Safari bản mới</td></tr>
+  <tr><th>Kết nối</th><td>Cần internet để mở lần đầu</td></tr>
+</table>
+</div>
+
+<div class="lang-block" data-lang="en" hidden>
+<p><b>Fun Ten-Finger Computer Keyboard Typing Practice</b> helps you learn to type with all ten fingers in a relaxed, easy-to-remember way. It runs right in your browser — nothing to install.</p>
+<h2>How to use</h2>
+<ol>
+  <li>Click the <b>OPEN APP</b> button in the right-hand panel. The app opens in a new tab.</li>
+  <li>Rest both hands on the keyboard, index fingers on the two keys with small bumps (F and J).</li>
+  <li>Practice a little every day. Look at the screen and avoid looking down at the keyboard.</li>
+</ol>
+<h2>Tips to type faster</h2>
+<ul>
+  <li>Sit up straight, keep your wrists relaxed and don't tense your fingers.</li>
+  <li>Aim for accuracy first; speed will build over time.</li>
+  <li>Short daily practice works better than one long session.</li>
+</ul>
+<h2>Requirements</h2>
+<table>
+  <tr><th>Device</th><td>Computer with a keyboard (Windows, macOS, Linux)</td></tr>
+  <tr><th>Browser</th><td>Recent Chrome, Edge, Firefox or Safari</td></tr>
+  <tr><th>Connection</th><td>Internet needed to open it the first time</td></tr>
+</table>
+</div></div>
+</article>
 <article class='app-card' data-cat='Công cụ'>
   <a class='card-cover' href='easypdf.html' title='EasyPDF'><span class='card-icon'>E</span><span class='cover-sign'><span>ANLAB / RELEASE</span><b>↗</b></span></a>
   <div class='card-content'>
@@ -469,6 +526,15 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 })();
 </script>
 <script>(function(){
+  function actionLabel(){
+    var info=document.querySelector('.article-body .anlab-app-data');var b=document.querySelector('.article-shell .dl-btn');
+    if(!info||!b||!info.dataset.actionVi||b.classList.contains('disabled'))return;
+    var en=(document.documentElement.lang==='en');
+    b.textContent=en?info.dataset.actionEn:info.dataset.actionVi;
+  }
+  actionLabel();setTimeout(actionLabel,50);setTimeout(actionLabel,500);
+  window.addEventListener('load',function(){setTimeout(actionLabel,100);});
+  document.querySelectorAll('[data-set-lang]').forEach(function(b){b.addEventListener('click',function(){setTimeout(actionLabel,30);setTimeout(actionLabel,300);});});
   var q=new URLSearchParams(location.search);
   var cat=q.get('cat'), term=(q.get('q')||'').trim().toLowerCase();
   var cards=[].slice.call(document.querySelectorAll('.app-card'));

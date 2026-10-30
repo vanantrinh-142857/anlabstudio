@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EasyPDF | AnLAB — Software Studio</title><meta name="description" content="EasyPDF là trình xem và xử lý PDF gọn nhẹ: đọc, tách, ghép, ghi chú và OCR ngay trên máy, không cần internet."/>
-<meta property="og:title" content="EasyPDF | AnLAB — Software Studio"/><meta property="og:description" content="EasyPDF là trình xem và xử lý PDF gọn nhẹ: đọc, tách, ghép, ghi chú và OCR ngay trên máy, không cần internet."/><meta property="og:type" content="website"/>
+<title>EasyPDF | AnLAB — Software Studio</title><meta name="description" content="EasyPDF là bộ công cụ xem và xử lý PDF gọn nhẹ cho điện thoại và máy tính: đọc, tách, ghép, ghi chú, OCR, xem Word/Excel và mô hình IFC 3D ngay trên máy, không cần internet."/>
+<meta property="og:title" content="EasyPDF | AnLAB — Software Studio"/><meta property="og:description" content="EasyPDF là bộ công cụ xem và xử lý PDF gọn nhẹ cho điện thoại và máy tính: đọc, tách, ghép, ghi chú, OCR, xem Word/Excel và mô hình IFC 3D ngay trên máy, không cần internet."/><meta property="og:type" content="website"/>
+<meta property="og:image" content="https://anlabstudio.org/easypdf-web-banner-1200.webp"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="675"/><meta name="twitter:card" content="summary_large_image"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap"/>
 <style>
 /*
@@ -114,6 +115,8 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 .guide-empty{color:#7a8196}
 .guide-list:has(.guide-item)+.guide-empty{display:none}
 .article-body figure{margin:18px 0}.article-body figcaption{font-size:12px;color:#7a8196;text-align:center}
+.app-banner{margin:0 0 26px}.app-banner img{display:block;width:100%;height:auto;margin:0;border-radius:14px;border:1px solid #e3e6f1;box-shadow:0 12px 34px rgba(17,24,42,.10)}
+.app-banner-link{display:block;border-radius:14px;cursor:pointer;transition:transform .2s,box-shadow .2s}.app-banner-link:hover{transform:translateY(-3px)}.app-banner-link:hover img{box-shadow:0 18px 44px rgba(113,93,244,.28)}.app-banner-link:focus-visible{outline:3px solid #7666e9;outline-offset:4px}
 </style>
 </head><body>
 <header class='topbar'><div class='wrap'>
@@ -129,7 +132,7 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 </nav>
 <div class='langswitch' role='group' aria-label='Language / Ngôn ngữ'>
 <button aria-pressed='true' class='on' data-set-lang='vi' title='Tiếng Việt' type='button'><svg aria-hidden='true' viewBox='0 0 30 20'><rect fill='#DA251D' height='20' width='30'/><polygon fill='#FFFF00' points='15,4 16.76,9.18 22.2,9.24 17.85,12.52 19.47,17.76 15,14.6 10.53,17.76 12.15,12.52 7.8,9.24 13.24,9.18'/></svg><span>VI</span></button>
-<button aria-pressed='false' data-set-lang='en' title='English' type='button'><svg aria-hidden='true' viewBox='0 0 60 40'><rect fill='#012169' height='40' width='60'/><path d='M0,0 60,40 M60,0 0,40' fill='none' stroke='#fff' stroke-width='8'/><path d='M0,0 60,40 M60,0 0,40' fill='none' stroke='#C8102E' stroke-width='3'/><path d='M30,0V40 M0,20H60' fill='none' stroke='#fff' stroke-width='13'/><path d='M30,0V40 M0,20H60' fill='none' stroke='#C8102E' stroke-width='8'/></svg><span>EN</span></button>
+<button aria-pressed='false' data-set-lang='en' title='English' type='button'><svg aria-hidden='true' viewBox='0 0 60 40'><rect fill='#fff' height='40' width='60'/><rect fill='#B22234' height='3.077' width='60' y='0.000'/><rect fill='#B22234' height='3.077' width='60' y='6.154'/><rect fill='#B22234' height='3.077' width='60' y='12.308'/><rect fill='#B22234' height='3.077' width='60' y='18.462'/><rect fill='#B22234' height='3.077' width='60' y='24.615'/><rect fill='#B22234' height='3.077' width='60' y='30.769'/><rect fill='#B22234' height='3.077' width='60' y='36.923'/><rect fill='#3C3B6E' height='21.538' width='24'/><path d='M2 2.15h.01 M6 2.15h.01 M10 2.15h.01 M14 2.15h.01 M18 2.15h.01 M22 2.15h.01 M4 4.31h.01 M8 4.31h.01 M12 4.31h.01 M16 4.31h.01 M20 4.31h.01 M2 6.46h.01 M6 6.46h.01 M10 6.46h.01 M14 6.46h.01 M18 6.46h.01 M22 6.46h.01 M4 8.62h.01 M8 8.62h.01 M12 8.62h.01 M16 8.62h.01 M20 8.62h.01 M2 10.77h.01 M6 10.77h.01 M10 10.77h.01 M14 10.77h.01 M18 10.77h.01 M22 10.77h.01 M4 12.92h.01 M8 12.92h.01 M12 12.92h.01 M16 12.92h.01 M20 12.92h.01 M2 15.08h.01 M6 15.08h.01 M10 15.08h.01 M14 15.08h.01 M18 15.08h.01 M22 15.08h.01 M4 17.23h.01 M8 17.23h.01 M12 17.23h.01 M16 17.23h.01 M20 17.23h.01 M2 19.38h.01 M6 19.38h.01 M10 19.38h.01 M14 19.38h.01 M18 19.38h.01 M22 19.38h.01' fill='none' stroke='#fff' stroke-linecap='round' stroke-width='1.7'/></svg><span>EN</span></button>
 </div>
 <a class='top-action' href='index.html#apps'>Khám phá tất cả ↗</a>
 </div></header>
@@ -138,16 +141,18 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 <div class='wrap' id='main-content'><div class='article-shell'><nav class='breadcrumbs'><a href='index.html'>Trang chủ</a><span>/</span><span>EasyPDF</span></nav>
 <div class='detail-grid'>
 <article class='article-card'><div class='article-in'>
-<div class='article-head'><div class='article-topline'>ANLAB / RELEASE NOTES</div><h1>EasyPDF</h1><p class='article-sub'>Cập nhật: 19/10/2026</p></div>
+<div class='article-head'><div class='article-topline'>ANLAB / RELEASE NOTES</div><h1>EasyPDF</h1><p class='article-sub'>Cập nhật: 30/10/2026</p></div>
 <hr class='article-divider'/>
 <div class='ad-target' id='anlab-slot-post-top'></div>
 <div class='article-body post-body'><div class="anlab-app-data"
-  data-version="1.0.0"
-  data-platform="Windows"
-  data-format="EXE"
-  data-size="28 MB"
+  data-version="2.94"
+  data-platform="Android · Web"
+  data-format="Google Play · Web app"
+  data-size="≈ 3 MB"
   data-license="Miễn phí"
-  data-download="https://drive.google.com/uc?export=download&id=1GVYP5pbN04pvbaCvVdVby9a-XIgfW08Z"
+  data-download="https://vanantrinh-142857.github.io/EasyPDF-web/"
+  data-action-vi="MỞ EASYPDF (WEB)"
+  data-action-en="OPEN EASYPDF (WEB)"
   data-icon=""
   data-sha256=""
   data-accent="#5145AE"
@@ -155,71 +160,123 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
 
 <!-- ======================= TIẾNG VIỆT ======================= -->
 <div class="lang-block" data-lang="vi">
-<p><b>EasyPDF</b> là trình xem và xử lý PDF gọn nhẹ: đọc, tách, ghép, ghi chú và nhận dạng chữ (OCR) ngay trên máy, không cần internet.</p>
+<figure class="app-banner"><a class="app-banner-link" href="https://vanantrinh-142857.github.io/EasyPDF-web/" target="_blank" rel="noopener noreferrer" title="Mở EasyPDF" aria-label="Mở EasyPDF (web)"><img alt="EasyPDF — phần mềm đọc và chỉnh sửa tài liệu chuyên nghiệp: PDF, Word, Excel, PowerPoint, ảnh và mô hình 3D IFC, xử lý cục bộ" src="easypdf-web-banner-1200.webp" srcset="easypdf-web-banner-640.webp 640w, easypdf-web-banner-1200.webp 1200w" sizes="(max-width:760px) 92vw, 780px" width="1200" height="675" fetchpriority="high" decoding="async"/></a></figure>
+<p><b>EasyPDF</b> là bộ công cụ xem và xử lý tài liệu gọn nhẹ cho điện thoại và máy tính: đọc và chỉnh sửa PDF, xem Word / Excel / PowerPoint, chỉnh ảnh và xem mô hình IFC 3D. Mọi thứ xử lý ngay trên máy, không cần internet và không tải tài liệu lên máy chủ.</p>
 
 <h2>Tính năng chính</h2>
 <ul>
-  <li>Xem PDF nhanh, tìm kiếm trong tài liệu</li>
-  <li>Tách / ghép / xoay trang</li>
-  <li>Ghi chú, đánh dấu, ký tên</li>
-  <li>OCR tiếng Việt cho bản scan</li>
+  <li>Xem PDF nhanh, tìm kiếm trong tài liệu, mục lục; mở được cả bản vẽ khổ lớn và tệp nặng</li>
+  <li>Tách / ghép / xoay / xóa / sắp xếp lại trang</li>
+  <li>Bút, highlight, ghi chú, chèn chữ, ảnh và chữ ký; che vĩnh viễn thông tin nhạy cảm; hình mờ và đánh số trang</li>
+  <li>OCR và dịch vùng chọn cho bản scan</li>
+  <li>Xem tài liệu Word, Excel, PowerPoint; Word và Excel hiển thị giống tệp gốc (màu, cỡ chữ, bảng, ảnh, biểu đồ)</li>
+  <li><b>Mã QR</b>: tạo (văn bản, liên kết hoặc mẫu “Cấu kiện”), đổi kiểu dáng, chèn thẳng vào trang PDF; đọc mã từ trang PDF hoặc ảnh; in lưới nhãn cấu kiện A4</li>
+  <li>Chỉnh ảnh: chèn ảnh con, thêm ngày giờ và vị trí</li>
+  <li><b>Mô hình IFC 3D</b>: xem kết cấu thép, đo đạc, lọc cấu kiện</li>
+  <li><b>Mở tệp nặng</b>: đọc từng phần, tự chuyển sang chế độ xem nhẹ khi máy thiếu bộ nhớ</li>
+  <li><b>Lịch sử “Gần đây”</b> cho PDF, Office và IFC: nhớ 50 tệp gần nhất và tự tiếp tục từ trang đã xem</li>
+  <li>7 ngôn ngữ: Tiếng Việt, English, Bahasa Indonesia, 한국어, 日本語, 简体中文, Filipino</li>
 </ul>
 
-<h2>Ảnh chụp màn hình</h2>
-<p><!-- Chèn ảnh bằng nút Ảnh của Blogger --></p>
-
-<h2>Cài đặt</h2>
+<h2>Cài đặt và sử dụng</h2>
+<!-- GOOGLE PLAY: dán liên kết trực tiếp tại đây, ví dụ: <li>Cài từ <a href="https://play.google.com/store/apps/details?id=TEN_GOI" target="_blank" rel="noopener">Google Play</a>.</li> -->
 <ol>
-  <li>Bấm nút <b>TẢI PHẦN MỀM</b> ở khung bên phải.</li>
-  <li>Nếu Google Drive báo "không thể quét virus", bấm <i>Tải xuống vẫn tiếp tục</i>.</li>
-  <li>Chạy file cài đặt, làm theo hướng dẫn.</li>
-  <li>Nếu Windows SmartScreen cảnh báo: chọn <i>More info → Run anyway</i> (chỉ với file tải từ trang này).</li>
+  <li><b>Trên Android:</b> cài EasyPDF từ Google Play, rồi mở tệp trực tiếp trong ứng dụng hoặc chọn <i>Mở bằng EasyPDF</i> từ trình quản lý tệp.</li>
+  <li><b>Trên trình duyệt:</b> bấm nút <b>MỞ EASYPDF (WEB)</b> ở khung bên phải; tài liệu vẫn được xử lý trên máy của bạn.</li>
+  <li>Từ màn hình chính, chọn việc muốn làm (mở file, chỉnh ảnh, gộp, tách, mô hình IFC 3D). Mục <b>Gần đây</b> giúp mở lại tệp vừa xem; nếu tệp đã đóng, ứng dụng nhắc chọn lại tệp và tiếp tục từ chỗ bạn đã xem.</li>
 </ol>
 
 <h2>Yêu cầu hệ thống</h2>
 <table>
-  <tr><th>Hệ điều hành</th><td>Windows 10/11 64-bit</td></tr>
-  <tr><th>RAM</th><td>Từ 4 GB</td></tr>
+  <tr><th>Thiết bị</th><td>Điện thoại / máy tính bảng Android 7.0 trở lên, hoặc trình duyệt hiện đại (bản web)</td></tr>
+  <tr><th>RAM</th><td>Khuyến nghị từ 4 GB để mở tệp rất nặng; máy RAM thấp sẽ tự dùng chế độ xem nhẹ</td></tr>
 </table>
 
 <h2>Lịch sử phiên bản</h2>
 <blockquote>
-  <b>1.0.0</b> — Phát hành lần đầu.
+  <b>2.94</b> — 30/10/2026<br/>
+  • Mới: Mã QR — tạo từ văn bản/liên kết hoặc mẫu “Cấu kiện” (mã + dự án + phiên bản + ghi chú); chọn mức sửa lỗi; lưu PNG/SVG, chia sẻ, sao chép hoặc chèn thẳng vào trang PDF.<br/>
+  • Mã QR: đổi màu (kể cả chuyển màu, nền trong suốt), 7 dạng ô, 4 dạng mắt, logo ở giữa, khung viền và dòng chữ; tự kiểm tra “Quét được / Khó quét”.<br/>
+  • Đọc mã QR từ trang PDF đang xem, cả tài liệu hoặc ảnh trong máy; “Quét kỹ” cho bản vẽ khổ lớn; không tự mở liên kết.<br/>
+  • In nhãn cấu kiện: dán danh sách hoặc nhập Excel/CSV để tạo PDF lưới nhãn A4 (dọc/ngang, nhiều cỡ nhãn, 200/300 dpi).<br/>
+  • Excel: ba kiểu xem (Thẻ, Bảng gọn, Bản gốc); Bản gốc giữ màu nền, viền, căn lề, ảnh, hình chú thích và biểu đồ đúng vị trí ô; chạm ô nhiều chữ để đọc đầy đủ.<br/>
+  • Word: bản xem giống tệp gốc (font, màu, giãn dòng, đánh số, bảng, ảnh, hộp chữ, đầu/cuối trang); bấm “Sửa” để chuyển sang chế độ sửa cơ bản.<br/>
+  • Màn hình chính luôn cuộn được trên màn hình thấp hoặc xoay ngang; thanh cuộn luôn hiện.<br/>
+  • Sửa lỗi: PDF có mật khẩu không lưu ảnh thu nhỏ trang đầu; thoát ứng dụng sau khi đã hiện trang đầu không bị báo nhầm là lỗi; “Mở lại tệp gần nhất” nhớ thêm .ifclite, .doc, .xlsb.<br/>
+  • Hạn chế: hình vector EMF/WMF thuần, SmartArt và nhóm hình phức tạp trong Word hiện khung ghi chú; công thức Excel không có giá trị lưu sẵn hiện trống; chưa quét mã QR bằng camera trực tiếp.
+</blockquote>
+<blockquote>
+  <b>2.92</b> — 28/10/2026<br/>
+  • Mở tệp nặng tốt hơn: PDF lớn đọc theo từng phần, tự bật chế độ xem nhẹ, nhận biết lần mở trước bị dừng đột ngột.<br/>
+  • IFC: đọc theo từng phần và bật các lớp bảo vệ bộ nhớ khi chạy trên điện thoại.<br/>
+  • Mới: lịch sử “Gần đây” cho PDF, Office và IFC; tự tiếp tục từ trang đã xem.<br/>
+  • Sửa lỗi: tệp mới mở không còn giữ vị trí cuộn của tệp trước; nhãn số trang không còn lệch một trang.<br/>
+  • Sửa lỗi: bộ chọn tệp trên Android không còn ẩn tệp IFC (trước đây phải chọn “Tất cả tệp” mới thấy).<br/>
+  • Đổi cờ tiếng Anh sang cờ Mỹ.
+</blockquote>
+<blockquote>
+  <b>2.89</b> — Xem mô hình IFC 3D ngay trong EasyPDF.
 </blockquote>
 </div>
 
 <!-- ======================= ENGLISH ======================= -->
 <div class="lang-block" data-lang="en" hidden>
-<p><b>EasyPDF</b> is a lightweight PDF viewer and toolkit: read, split, merge, annotate and run OCR right on your computer — no internet required.</p>
+<figure class="app-banner"><a class="app-banner-link" href="https://vanantrinh-142857.github.io/EasyPDF-web/" target="_blank" rel="noopener noreferrer" title="Open EasyPDF" aria-label="Open EasyPDF (web)"><img alt="EasyPDF — professional document reader and editor: PDF, Word, Excel, PowerPoint, photos and 3D IFC models, processed locally" src="easypdf-web-banner-1200.webp" srcset="easypdf-web-banner-640.webp 640w, easypdf-web-banner-1200.webp 1200w" sizes="(max-width:760px) 92vw, 780px" width="1200" height="675" loading="lazy" decoding="async"/></a></figure>
+<p><b>EasyPDF</b> is a lightweight document toolkit for phones and computers: read and edit PDFs, view Word / Excel / PowerPoint, edit photos and open 3D IFC models. Everything runs on your device — no internet required and no documents uploaded to a server.</p>
 
 <h2>Key features</h2>
 <ul>
-  <li>Fast PDF viewing with in-document search</li>
-  <li>Split / merge / rotate pages</li>
-  <li>Annotate, highlight and sign</li>
-  <li>Vietnamese OCR for scanned documents</li>
+  <li>Fast PDF viewing, in-document search and outline; handles large drawings and heavy files</li>
+  <li>Split / merge / rotate / delete / reorder pages</li>
+  <li>Pen, highlight, notes, text, images and signatures; permanent redaction of sensitive data; watermarks and page numbers</li>
+  <li>OCR and area translation for scanned documents</li>
+  <li>View Word, Excel and PowerPoint documents; Word and Excel look like the original file (colours, fonts, tables, images, charts)</li>
+  <li><b>QR codes</b>: create (text, link or a “Member” template), restyle, insert straight into a PDF page; read codes from a PDF page or a photo; print A4 member-label sheets</li>
+  <li>Photo editing: insert overlay images, add date/time and location</li>
+  <li><b>3D IFC models</b>: view steel structures, measure, filter parts</li>
+  <li><b>Heavy-file opening</b>: reads files in parts and switches to lite view automatically on low memory</li>
+  <li><b>“Recent” history</b> for PDF, Office and IFC: remembers your last 50 files and resumes from the page you left</li>
+  <li>7 languages: Tiếng Việt, English, Bahasa Indonesia, 한국어, 日本語, 简体中文, Filipino</li>
 </ul>
 
-<h2>Screenshots</h2>
-<p><!-- Insert images with Blogger's image button --></p>
-
-<h2>Installation</h2>
+<h2>Installation and use</h2>
+<!-- GOOGLE PLAY: paste the direct link here, e.g. <li>Install from <a href="https://play.google.com/store/apps/details?id=PACKAGE" target="_blank" rel="noopener">Google Play</a>.</li> -->
 <ol>
-  <li>Click the <b>DOWNLOAD</b> button in the right-hand panel.</li>
-  <li>If Google Drive says it "can't scan this file for viruses", click <i>Download anyway</i>.</li>
-  <li>Run the installer and follow the instructions.</li>
-  <li>If Windows SmartScreen shows a warning: choose <i>More info → Run anyway</i> (only for files downloaded from this page).</li>
+  <li><b>On Android:</b> install EasyPDF from Google Play, then open files inside the app or choose <i>Open with EasyPDF</i> from your file manager.</li>
+  <li><b>In a browser:</b> click the <b>OPEN EASYPDF (WEB)</b> button in the right-hand panel; documents are still processed on your own device.</li>
+  <li>On the home screen, pick what you want to do (open file, edit photo, merge, split, 3D IFC model). <b>Recent</b> reopens files you viewed; if a file was closed, the app asks you to pick it again and resumes where you stopped.</li>
 </ol>
 
 <h2>System requirements</h2>
 <table>
-  <tr><th>Operating system</th><td>Windows 10/11 64-bit</td></tr>
-  <tr><th>RAM</th><td>4 GB or more</td></tr>
+  <tr><th>Device</th><td>Android 7.0+ phone / tablet, or a modern browser (web version)</td></tr>
+  <tr><th>RAM</th><td>4 GB or more recommended for very heavy files; low-memory devices automatically use lite view</td></tr>
 </table>
 
 <h2>Version history</h2>
 <blockquote>
-  <b>1.0.0</b> — Initial release.
+  <b>2.94</b> — 30/10/2026<br/>
+  • New: QR codes — create from text/link or a “Member” template (code + project + revision + note); choose error-correction level; save PNG/SVG, share, copy or insert straight into a PDF page.<br/>
+  • QR styling: colours (including gradients and transparent background), 7 module shapes, 4 eye shapes, centre logo, frame and caption; automatic “Scans OK / Hard to scan” check.<br/>
+  • Read QR codes from the PDF page you are viewing, the whole document or a photo on your device; “Deep scan” for large drawings; links are never opened automatically.<br/>
+  • Member-label printing: paste a list or import Excel/CSV to build an A4 label-sheet PDF (portrait/landscape, several label sizes, 200/300 dpi).<br/>
+  • Excel: three view modes (Cards, Compact, Original); Original keeps fills, borders, alignment, images, callouts and charts in place; tap a long cell to read it in full.<br/>
+  • Word: the viewer now looks like the original file (fonts, colours, spacing, numbering, tables, images, text boxes, headers/footers); tap “Edit” for basic editing.<br/>
+  • The home screen always scrolls on short or landscape screens; the scroll bar is always visible.<br/>
+  • Fixes: password-protected PDFs no longer store a first-page thumbnail; quitting after the first page has appeared is no longer reported as a crash; “Reopen last file” also remembers .ifclite, .doc and .xlsb.<br/>
+  • Limitations: pure-vector EMF/WMF, SmartArt and complex shape groups in Word show a placeholder box; Excel formulas without a stored value show blank; QR scanning directly with the camera is not available yet.
+</blockquote>
+<blockquote>
+  <b>2.92</b> — 28/10/2026<br/>
+  • Better heavy-file opening: large PDFs are read in parts, lite view turns on automatically, and an abrupt stop on the previous open is detected.<br/>
+  • IFC: read in parts, with memory protections enabled when running on phones.<br/>
+  • New: “Recent” history for PDF, Office and IFC; resume from the page you left.<br/>
+  • Fixes: a newly opened file no longer inherits the previous file's scroll position; the page indicator is no longer off by one.<br/>
+  • Fix: the Android file picker no longer hides IFC files (you used to have to choose “All files” to see them).<br/>
+  • English flag changed to the US flag.
+</blockquote>
+<blockquote>
+  <b>2.89</b> — 3D IFC model viewing inside EasyPDF.
 </blockquote>
 </div>
 </div>
@@ -378,6 +435,7 @@ html.ads-hide-empty .adzone:not(:has(.widget)){display:none}
         dl.href=href;dl.target='_blank';dl.rel='noopener noreferrer';
         dl.classList.remove('disabled');dl.removeAttribute('aria-disabled');
         dl.textContent='↓  TẢI PHẦN MỀM';
+        document.querySelectorAll('.app-banner-link').forEach(function(a){a.href=href;a.target='_blank';a.rel='noopener noreferrer';});
       }
     }
   }
